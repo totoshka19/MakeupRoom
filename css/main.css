@@ -42,6 +42,7 @@ body {
     font-family: 'Kyiv Type Sans', sans-serif;
     color: var(--secondary-color);
     font-size: 48px;
+    text-align: center;
 }
 
 .btn {
@@ -105,6 +106,7 @@ body {
 /* ---------------- Header end ---------------- */
 
 /* ---------------- Hero start ---------------- */
+
 .hero {
     height: calc(100vh - 100px);
     background-image: url("../img/hero-bg.jpg");
@@ -144,93 +146,53 @@ body {
 
 .hero__arrow {
     padding-bottom: 16px;
-
 }
-
-
-
 
 /* ---------------- Hero end ---------------- */
 
-/* ---------------- Trimming start ---------------- */
+/* ---------------- About start ---------------- */
 
-.trimming {
-    background-color: var(--accent-color);
+.about__title {
+    padding: 40px 0;
 }
 
-.trimming__container {
+.about__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 40px 30px;
+    gap: 30px;
+    padding-bottom: 50px;
 }
 
-.trimming__title {
-    color: white;
-    font-size: 28px;
+.about__content-item {
+    width: 50%;
 }
 
-/* ---------------- Trimming end ---------------- */
-
-/* ---------------- Team start ---------------- */
-
-.team {
-    margin-bottom: 40px;
+.thumb-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
 }
-
-.team__title {
-    text-align: center;
-    padding-top: 50px;
-}
-
-.team__cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 50px;
-}
-
-.team__card {
-    display: flex;
-    max-width: 600px;
-    background-color: var(--card-bgcolor);
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.team__card-img {
-    max-width: 40%;
+.thumb-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    border-width: 0;
+    outline-width: 0;
 }
 
-.team__card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 10px;
-    gap: 20px;
+.about__content-item p {
+    line-height: 28px;
 }
 
-.team__card-title {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 5px;
+.about__content-item p:not(:last-child) {
+    padding-bottom: 24px;
 }
 
-.team__card-video {
-    font-weight: bold;
-    transition: all .5s ease;
-}
-
-.team__card-video:hover {
-    color: var(--secondary-color);
-}
-
-/* ---------------- Team end ---------------- */
+/* ---------------- About end ---------------- */
 
 /* ---------------- Gallery start ---------------- */
 

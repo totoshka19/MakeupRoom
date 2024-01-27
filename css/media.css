@@ -85,6 +85,12 @@
     .hero__title {
         font-size: 34px;
     }
+    .about__content {
+        flex-direction: column;
+    }
+    .about__content-item {
+        width: 100%;
+    }
     .gallery__cards {
         display: grid;
         gap: 10px;
