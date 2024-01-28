@@ -212,14 +212,12 @@ body {
 .education__leaf:first-child {
     position: absolute;
     right: 0;
-    max-width: 10%;
 }
 
 .education__leaf:nth-child(2) {
     position: absolute;
     top: 50%;
     left: 0;
-    max-width: 10%;
 }
 
 /* ---------------- Education end ---------------- */
@@ -230,7 +228,6 @@ body {
     position: absolute;
     top: 30%;
     right: 0;
-    max-width: 12%;
     transform: scale(-1, -1);
 }
 
@@ -240,14 +237,13 @@ body {
 
 .reviews__leaf {
     position: absolute;
-    top: 30%;
+    top: -30%;
     left: 0;
-    max-width: 12%;
     transform: scale(-1, 1);
 }
 
 .reviews__content {
-    padding: 10px 0;
+    padding: 20px 0 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -335,7 +331,7 @@ body {
 }
 
 .footer__social-icon:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .footer__social-icon .fa-brands {

@@ -1,24 +1,14 @@
-@media (max-width: 1270px) {
-    .hero__title {
-        font-size: 52px;
+@media (max-width: 1300px) {
+    .footer__container {
+        height: 60%;
     }
-    .trimming__container {
+    .footer__nav .nav-list {
         flex-direction: column;
-        text-align: center;
-        padding: 40px 30px;
-    }
-    .horses__cards {
-        gap: 20px 10px;
+        gap: 10px;
     }
 }
 
-@media (max-width: 1150px) {
-    .hero__title {
-        font-size: 45px;
-    }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1128px) {
     .header__nav {
         display: flex;
         position: absolute;
@@ -28,7 +18,7 @@
         background-image: url("../img/hero-bg.jpg");
         background-position: center;
         background-repeat: no-repeat;
-        object-fit: cover;
+        background-size: cover;
         width: 100vw;
         height: 100vh;
         text-align: center;
@@ -43,7 +33,6 @@
         height: 50px;
         top: 80px;
         left: 0;
-        /*background-image: url("../img/logo.svg");*/
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -51,14 +40,12 @@
     .header__nav.open {
         transform: translateX(100%);
     }
-    .nav-list {
+    .header__nav .nav-list {
         width: 100%;
-    }
-    .nav-list {
         flex-direction: column;
         padding: 20px;
     }
-    .nav-list__item-link:hover {
+    .header__nav .nav-list__item-link:hover {
         color: white;
         border-color: var(--btn-color-hover);
     }
@@ -73,11 +60,15 @@
     .hero__title {
         font-size: 38px;
     }
-    .horses__cards {
-        justify-content: space-around;
+    .leaf {
+        width: 150px;
     }
-    .horses__card {
-        max-width: 32%;
+    .leaf img {
+        width: 100%;
+        height: auto;
+    }
+    .reviews__content {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -91,13 +82,11 @@
     .about__content-item {
         width: 100%;
     }
-    .footer {
-        padding: 30px;
-     }
-    .footer__container {
-        max-width: 400px;
-        flex-direction: column;
-        text-align: center;
+    .leaf {
+        width: 100px;
+    }
+    .reviews__content {
+        display: block;
     }
 }
 
@@ -130,15 +119,26 @@
         text-align: center;
         font-size: 16px;
     }
+    .footer__container {
+        width: 100%;
+        bottom: -30px;
+    }
+    .footer:before {
+        top: 100px;
+        left: 10px;
+        width: 139px;
+        height: 200px;
+        background-size: contain;
+    }
+    .footer:after {
+        width: 0;
+        height: 0;
+    }
 }
 
 @media (max-width: 620px) {
     .header__nav:before {
         height: 40px;
-    }
-    #menuBtn {
-        top: -10px;
-        right: 20px;
     }
 }
 
