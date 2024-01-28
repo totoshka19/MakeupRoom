@@ -283,11 +283,32 @@ body {
 
 .footer {
     position: relative;
-    background-image: url("../img/footer-bg-1920.jpg");
+    background-image: url("../img/footer/footer-bg.jpg");
+    height: 300px;
+}
+
+.footer:before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 50px;
+    width: 239px;
+    height: 274px;
+    background-image: url("../img/footer/footer-gus.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+}
+
+.footer:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 230px;
     height: 300px;
+    background-image: url("../img/footer/footer-flower.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .footer__container {
