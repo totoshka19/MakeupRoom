@@ -194,151 +194,56 @@ body {
 
 /* ---------------- About end ---------------- */
 
-/* ---------------- Gallery start ---------------- */
-
-.gallery {
-    margin-bottom: 40px;
+/*TODO доделать*/
+.education,
+.events,
+.reviews {
+    position: relative;
+    height: 600px;
 }
 
-.gallery__title {
-    text-align: center;
-    padding-top: 50px;
+/* ---------------- Education start ---------------- */
+
+.education__leaf:first-child {
+    position: absolute;
+    right: 0;
+    max-width: 10%;
 }
 
-.gallery__cards {
-    margin-top: 50px;
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 250px);
-    grid-template-areas:
-            "a b c"
-            "a d e"
-            "f d i"
-            "g h i";
+.education__leaf:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    max-width: 10%;
 }
 
-.gallery__card {
-    width: 100%;
-    height: auto;
+/* ---------------- Education end ---------------- */
+
+/* ---------------- Events start ---------------- */
+
+.events__leaf {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    max-width: 12%;
+    transform: scale(-1, -1);
 }
 
-.gallery__card:nth-child(1) {
-  grid-area: a;
+/* ---------------- Events end ---------------- */
+
+/* ---------------- Reviews start ---------------- */
+
+.reviews__leaf {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    max-width: 12%;
+    transform: scale(-1, 1);
 }
 
-.gallery__card:nth-child(2) {
-    grid-area: b;
-}
+/* ---------------- Reviews end ---------------- */
 
-.gallery__card:nth-child(3) {
-    grid-area: c;
-}
 
-.gallery__card:nth-child(4) {
-    grid-area: d;
-}
-
-.gallery__card:nth-child(5) {
-    grid-area: e;
-}
-
-.gallery__card:nth-child(6) {
-    grid-area: f;
-}
-
-.gallery__card:nth-child(7) {
-    grid-area: g;
-}
-
-.gallery__card:nth-child(8) {
-    grid-area: h;
-}
-
-.gallery__card:nth-child(9) {
-    grid-area: i;
-}
-
-.gallery__card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* ---------------- Gallery end ---------------- */
-
-/* ---------------- Services start ---------------- */
-
-.services {
-    margin-bottom: 40px;
-}
-
-.services__title {
-    text-align: center;
-    padding: 50px 0 25px;
-}
-
-.services__block {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    margin: 0 auto;
-    font-size: 24px;
-}
-
-.services__list-item i {
-    color: var(--accent-color);
-}
-
-.services__block .btn {
-    margin: 30px auto;
-}
-
-/* ---------------- Services end ---------------- */
-
-/* ---------------- Horses start ---------------- */
-
-.horses {
-    margin-bottom: 50px;
-}
-
-.horses__title {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.horses__cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px 15px;
-}
-
-.horses__card {
-    max-width: 24%;
-    border: 2px solid var(--accent-color);
-    border-radius: 10px;
-}
-
-.horses__card-img {
-    width: 100%;
-    max-height: 290px;
-    object-fit: cover;
-    border-bottom: 1px solid var(--accent-color);
-    border-radius: 8px 8px 0 0;
-}
-
-.horses__card-title {
-    padding : 8px 8px 2px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.horses__card-text {
-    padding : 0 8px 8px;
-}
-
-/* ---------------- Horses end ---------------- */
 
 /* ---------------- Footer start ---------------- */
 
